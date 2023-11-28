@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>The Darkest TimeSeries</title><link href="https://saulo013.github.io/" rel="alternate"></link><link href="https://saulo013.github.io/feeds/all.atom.xml" rel="self"></link><id>https://saulo013.github.io/</id><updated>2023-11-27T21:23:00-05:00</updated><entry><title>First Post</title><link href="https://saulo013.github.io/first-post.html" rel="alternate"></link><published>2023-11-27T21:23:00-05:00</published><updated>2023-11-27T21:23:00-05:00</updated><author><name>Saul Forman</name></author><id>tag:saulo013.github.io,2023-11-27:/first-post.html</id><summary type="html">&lt;p&gt;My first post, just testing that everything works.&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Darkest TimeSeries</title><link href="https://thedarkesttimeseries.com/" rel="alternate"></link><link href="https://thedarkesttimeseries.com/feeds/all.atom.xml" rel="self"></link><id>https://thedarkesttimeseries.com/</id><updated>2023-11-27T21:23:00-05:00</updated><entry><title>First Post</title><link href="https://thedarkesttimeseries.com/first-post.html" rel="alternate"></link><published>2023-11-27T21:23:00-05:00</published><updated>2023-11-27T21:23:00-05:00</updated><author><name>Saul Forman</name></author><id>tag:thedarkesttimeseries.com,2023-11-27:/first-post.html</id><summary type="html">&lt;p&gt;My first post, just testing that everything works.&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -1120,7 +1120,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h3 id="First-Post"&gt;First Post&lt;a class="anchor-link" href="#First-Post"&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This is a test post to make sure the Pelican plugins are running correctly.&lt;/p&gt;
-&lt;p&gt;Let's try rendering some code too. The following is adapted from &lt;a href="https://www.cs.ubc.ca/~nando/540-2013/index.html"&gt;Nando de Freitas' Machine Learning course&lt;/a&gt; and is the analytical solution for the predictive mean and standard deviation for an Exact GP regression. Fitting for our first post!&lt;/p&gt;
+&lt;p&gt;Let's try rendering some code too. The following is adapted from &lt;a href="https://www.cs.ubc.ca/~nando/540-2013/index.html"&gt;Nando de Freitas' Machine Learning course&lt;/a&gt; and is the analytical solution for the predictive mean and standard deviation for an Exact GP regression. Fitting for our first post (pun intended)!&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
