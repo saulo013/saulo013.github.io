@@ -1,39 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="utf-8" />
-        <title>First Post</title>
-        <link rel="stylesheet" href="https://saulo013.github.io/theme/css/main.css" />
-        <link href="https://saulo013.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Darkest TimeSeries Atom Feed" />
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Saul Forman" />
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="https://saulo013.github.io/">The Darkest TimeSeries </a></h1>
-                <nav><ul>
-                    <li class="active"><a href="https://saulo013.github.io/category/posts.html">posts</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-<section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="https://saulo013.github.io/first-post.html" rel="bookmark"
-           title="Permalink to First Post">First Post</a></h1>
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="python firsts, posts, " />
+
+<meta property="og:title" content="First Post "/>
+<meta property="og:url" content="https://saulo013.github.io/first-post.html" />
+<meta property="og:description" content="My first post, just testing that everything works." />
+<meta property="og:site_name" content="The Darkest TimeSeries" />
+<meta property="og:article:author" content="Saul Forman" />
+<meta property="og:article:published_time" content="2023-11-27T21:23:00-05:00" />
+<meta name="twitter:title" content="First Post ">
+<meta name="twitter:description" content="My first post, just testing that everything works.">
+
+        <title>First Post  · The Darkest TimeSeries
+</title>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://saulo013.github.io/theme/css/elegant.prod.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://saulo013.github.io/theme/css/custom.css" media="screen">
+
+        <link href="https://saulo013.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Darkest TimeSeries - Full Atom Feed" />
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="https://saulo013.github.io/"><span class=site-name>The Darkest TimeSeries</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       https://saulo013.github.io
+                                    >Home</a>
+                                </li>
+                                <li ><a href="https://saulo013.github.io/categories.html">Categories</a></li>
+                                <li ><a href="https://saulo013.github.io/tags.html">Tags</a></li>
+                                <li ><a href="https://saulo013.github.io/archives.html">Archives</a></li>
+                                <li><form class="navbar-search" action="https://saulo013.github.io/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="https://saulo013.github.io/first-post.html">
+                First Post
+            </a>
+        </h1>
     </header>
+</div>
 
-    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2023-11-27T21:23:00-05:00">
-                Published: Mon 27 November 2023
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://saulo013.github.io/author/saul-forman.html">Saul Forman</a>
-        </address>
-<p>In <a href="https://saulo013.github.io/category/posts.html">posts</a>.</p>
-<p>tags: <a href="https://saulo013.github.io/tag/python-firsts.html">python firsts</a> </p>
-</footer><!-- /.post-info -->      <style type="text/css">/*!
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+            
+            <style type="text/css">/*!
 *
 * IPython notebook
 *
@@ -1205,7 +1247,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Function to generate toy dataset to demo GP.</span>
 <span class="sd">    </span>
 <span class="sd">    REMINDER: We&#39;re &#39;training&#39; this GP analytically, meaning we&#39;ll have to invert</span>
-<span class="sd">    the Gram matrix of test points against themselves (N_train x N_train) so let&#39;s</span>
+<span class="sd">    the Gram matrix of training points against themselves (N_train x N_train) so let&#39;s</span>
 <span class="sd">    keep N_train small for now).</span>
 
 <span class="sd">    Parameters</span>
@@ -1233,6 +1275,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
     <span class="n">X_test</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">n_train</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">X_test</span>
+
 
 <span class="k">def</span> <span class="nf">fit_gp</span><span class="p">(</span>
     <span class="n">X_train</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> 
@@ -1426,38 +1469,98 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 }
 </script>
 
-    </div><!-- /.entry-content -->
 
-  </article>
-</section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="https://getpelican.com/">Pelican</a></li>
-                            <li><a href="https://www.python.org/">Python.org</a></li>
-                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="https://saulo013.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+             
+ 
+            
+            
+            
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
 
-</body>
+
+
+
+            <hr/>
+        </div>
+        <section id="article-sidebar" class="span2">
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2023-11-27T21:23:00-05:00">Nov 27, 2023</time>
+            <h4>Category</h4>
+            <a class="category-link" href="https://saulo013.github.io/categories.html#posts-ref">posts</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="https://saulo013.github.io/tags.html#python-firsts-ref">python firsts
+                    <span>1</span>
+</a></li>
+            </ul>
+<h4>Contact</h4>
+<div id="sidebar-social-link">
+</div>
+            
+
+
+
+
+
+            
+
+
+
+
+
+        </section>
+</div>
+</article>
+                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
 </html>

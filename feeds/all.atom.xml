@@ -1171,7 +1171,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;Function to generate toy dataset to demo GP.&lt;/span&gt;
 &lt;span class="sd"&gt;    &lt;/span&gt;
 &lt;span class="sd"&gt;    REMINDER: We&amp;#39;re &amp;#39;training&amp;#39; this GP analytically, meaning we&amp;#39;ll have to invert&lt;/span&gt;
-&lt;span class="sd"&gt;    the Gram matrix of test points against themselves (N_train x N_train) so let&amp;#39;s&lt;/span&gt;
+&lt;span class="sd"&gt;    the Gram matrix of training points against themselves (N_train x N_train) so let&amp;#39;s&lt;/span&gt;
 &lt;span class="sd"&gt;    keep N_train small for now).&lt;/span&gt;
 
 &lt;span class="sd"&gt;    Parameters&lt;/span&gt;
@@ -1199,6 +1199,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
     &lt;span class="n"&gt;X_test&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;linspace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;n_train&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;reshape&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;X_train&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y_train&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;X_test&lt;/span&gt;
+
 
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;fit_gp&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
     &lt;span class="n"&gt;X_train&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ndarray&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
